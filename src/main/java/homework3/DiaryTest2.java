@@ -31,11 +31,11 @@ public class DiaryTest2 {
         driver.findElement(By.id("postTitle")).sendKeys("hello, it is autotest");
 
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='Rich Text Area']")));
-        driver.findElement(By.xpath("//body[@class='mce-content-body ']")).sendKeys("Автотест печатает");
+        driver.findElement(By.xpath("//body[@class='mce-content-body']")).sendKeys("Автотест печатает");
         driver.switchTo().parentFrame();
         driver.findElement(By.id("atMoodBoxCheck")).click();
         driver.findElement(By.id("rewrite")).click();
-
+        Thread.sleep(5000);
         driver.quit();
     }
 }
