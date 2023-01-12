@@ -8,5 +8,4 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/report.html"},
         publish = true)
 public class CucumberTestRunnerForPostRequest {
-
 }

@@ -15,10 +15,8 @@ public class Error_Block {
     @Step("проверка ошибки авторизации")
     public void checkCorrectErrorCode(String expectedCode) {
         errorCode.shouldHave(text("401"));
-
         Assertions.assertAll(
                 () -> errorCode.shouldHave(text(expectedCode))
         );
     }
-
 }

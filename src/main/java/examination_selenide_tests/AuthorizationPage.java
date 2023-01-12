@@ -26,6 +26,4 @@ public class AuthorizationPage  {
         submitLoginButton.click();
         return page(My_account_page.class);
     }
-
-
 }

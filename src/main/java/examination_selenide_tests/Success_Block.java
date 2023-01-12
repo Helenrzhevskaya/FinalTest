@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
-
 public class Success_Block  {
 
     private final static String SUCCESS_XPATH_LOCATOR = "//span[text()='Home']";
@@ -47,6 +46,5 @@ public class Success_Block  {
                 () -> successHeader.shouldNotBe(Condition.visible)
         );
     }
-
 
 }

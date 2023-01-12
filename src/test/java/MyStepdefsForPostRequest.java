@@ -27,8 +27,6 @@ public class MyStepdefsForPostRequest {
         new AuthorizationPage().enterPassword(password);
     }
 
-
-
     @And("click on the login button")
     public void clickOnTheLoginButton() {
         new AuthorizationPage().enterButton();
@@ -53,7 +51,6 @@ public class MyStepdefsForPostRequest {
     public void pageContainsErrorCode(String arg0) {
         new Error_Block().checkCorrectErrorCode("401");
     }
-
 
     @After(value = "@close")
     public void quitBrowser() {
